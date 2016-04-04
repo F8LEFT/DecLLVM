@@ -154,7 +154,7 @@ if __name__ == "__main__":
     reg = ArmReg()
     dbgEng = DbgEngine(reg, ins)
     fd = open("F:/trace.log", "w+")
-    dbgEng.start_run(GetRegValue("PC"), 400, fd)
+    dbgEng.start_run(GetRegValue("PC"), 1000, fd)
     fd.close()
     del dbgEng
     del reg
